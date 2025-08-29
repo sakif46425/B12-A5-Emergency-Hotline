@@ -13,45 +13,51 @@
 
 
 </head>
-<body class="h-[100vh] mx-auto bg-white">
-    <div class=" max-w-full max-h-full  flex justify-between" >
-        <div class ="flex gap-[10px] ml-[60px] mt-[25px] mb-[25px]">
-    <div>
-            <img class="h-[70px] w-[50px]" src="./assets/logo.png" alt="">
-    </div>
-    <div class="text-3xl font-extrabold text-[#006747]">
+<body class="bg-white">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 md:px-12 py-4 border-b">
+    <!-- Left Logo + Text -->
+    <div class="flex items-center gap-3">
+      <img src="./assets/logo.png" alt="logo" class="h-10 w-10 md:h-12 md:w-12">
+      <div class="text-xl md:text-2xl font-extrabold text-green-700 leading-tight">
         <p>Emergency</p>
         <p>Service</p>
-    </div>
-    </div>
-    <div class="w-[397px] h-[52px] mt-[24px] mr-[60px] mb-[24px] flex  items-baseline text-center justify-between ">
-        <div class=" bg-[#e0fde7] rounded-[50px]  flex flex-row h-[52px] w-[123px] p-[12px] ">
-        <p class="inter-font-black items-center  text-[20px] justify-center">0<img class="h-[30px] relative left-[40px] bottom-[30px]" src="./assets/heart.png" alt=""></p>
-        
-    </div>
-    <div class="flex flex-row bg-[#e0fde7] rounded-[50px] h-[52px] w-[123px] p-[12px]  ">
-        <p class="inter-font-black items-center text-[20px]">100 <img class="h-[30px] relative left-[40px] bottom-[30px] " src="./assets/coin.png" alt=""></p>
-       
+      </div>
     </div>
 
-    <div class="flex flex-row bg-[#00A63E] rounded-[50px] h-[52px] w-[123px] p-[12px] text-white  ">
-        <p class="inter-font-black text-[20px] items-center ">2 copy</p>
+    <!-- Right Counters -->
+    <div class="flex items-center gap-3 sm:gap-4">
+      <!-- Heart -->
+      <div class="flex items-center bg-green-50 rounded-full px-4 py-2 text-base md:text-lg font-semibold .inter-font-black gap-2">
+        <span>0</span>
+        <span class="text-red-500">❤️</span>
+      </div>
+      <!-- Coin -->
+      <div class="flex items-center bg-green-50 rounded-full px-4 py-2 text-base md:text-lg font-semibold .inter-font-black gap-2">
+        <span>100</span>
+        <span class="text-yellow-500">🪙</span>
+      </div>
+      <!-- Copy -->
+      <div class="bg-green-600 text-white rounded-full px-4 py-2 text-base md:text-lg font-semibold .inter-font-black">
+        2 Copy
+      </div>
     </div>
-        
-    </div>
-    </div>
+  </header>
 
-    <div class=" bg-[linear-gradient(90deg,#013223,#006747,#00583D,#014630,#013223)] h-[240px]  flex flex-col justify-center items-center ">
-        <div >
-            <img class="h-[100px] w-[130px]" src="./assets/logo-dark.png" alt="">
-        </div>
-
-        <div>
-            <p class="text-center hind-madurai-bold text-5xl text-white">Emergency Service Directory</p></br>
-            <p class="hind-madurai-semibold text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
-        </div>
-    </div>
-
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-green-900 via-green-800 to-green-900 text-center py-10 md:py-14">
+    <!-- Center Logo -->
+    <img src="./assets/logo-dark.png" alt="logo dark" class="h-16 w-16 md:h-20 md:w-20 mx-auto mb-4">
+    <!-- Title -->
+    <h1 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white mb-2">
+      Emergency Service Directory
+    </h1>
+    <!-- Subtitle -->
+    <p class="text-sm md:text-base lg:text-lg text-white max-w-3xl mx-auto">
+      Government Emergency Services at Your Fingertip – A Project by Government of the People’s Republic of Bangladesh
+    </p>
+  </section>
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
 
     <!-- Left Section: Helpline Cards -->
@@ -223,26 +229,47 @@
     <!-- Right Section: Call History -->
     <div class="bg-white rounded-2xl shadow p-4 h-fit">
       <div class="flex justify-between items-center mb-3">
-        <h2 class="font-semibold">📞 Call History</h2>
-        <button class="text-sm bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600">Clear</button>
+        <h2 class="font-semibold">🕒 Call History</h2>
+        <button class="w-[114px] h-[32px] text-sm bg-[#00A63E] text-white px-4 py-1 rounded-[50px] hover:bg-green-500">Clear</button>
       </div>
       <div class="space-y-3 text-sm">
         <div>
-          <p class="font-medium">Fire Service Number</p>
-          <p class="text-gray-500">999 • 11:36:58 AM</p>
+          <p class="font-medium inter-font-black ">Fire Service Number</p>
+          <span class="flex justify-between">
+          <p class="text-gray-500 font-semibold">999</p>
+          <p class="text-gray-500 font-semibold">11:36:58 AM</p></span>
         </div>
         <div>
-          <p class="font-medium">National Emergency Number</p>
-          <p class="text-gray-500">1994-999999 • 11:36:58 AM</p>
+          <p class="font-medium inter-font-black ">National Emergency Number</p>
+          <span class="flex justify-between">
+          <p class="text-gray-500 font-semibold">1994-999999</p>
+          <p class="text-gray-500 font-semibold">11:36:58 AM</p></span>
         </div>
         <div>
-          <p class="font-medium">Bangladesh Railway Helpline</p>
-          <p class="text-gray-500">999 • 11:36:58 AM</p>
+          <p class="font-medium inter-font-black ">Fire Service Number</p>
+          <span class="flex justify-between">
+          <p class="text-gray-500 font-semibold">999</p>
+          <p class="text-gray-500 font-semibold">11:36:58 AM</p></span>
         </div>
         <div>
-          <p class="font-medium">Anti-Corruption Helpline</p>
-          <p class="text-gray-500">999 • 11:36:58 AM</p>
+          <p class="font-medium inter-font-black ">Bangladesh Railway Helpline </p>
+          <span class="flex justify-between">
+          <p class="text-gray-500 font-semibold">999</p>
+          <p class="text-gray-500 font-semibold">11:36:58 AM</p></span>
         </div>
+        <div>
+          <p class="font-medium inter-font-black ">Fire Service Number</p>
+          <span class="flex justify-between">
+          <p class="text-gray-500 font-semibold">999</p>
+          <p class="text-gray-500 font-semibold">11:36:58 AM</p></span>
+        </div>
+        <div>
+          <p class="font-medium inter-font-black ">Anti-Corruption Helpline</p>
+          <span class="flex justify-between">
+          <p class="text-gray-500 font-semibold">999</p>
+          <p class="text-gray-500 font-semibold">11:36:58 AM</p></span>
+        </div>
+
       </div>
     </div>
   </div>
